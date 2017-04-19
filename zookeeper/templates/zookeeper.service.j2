@@ -7,6 +7,7 @@ User=zookeeper
 Group=zookeeper
 SyslogIdentifier=zookeeper
 ExecStart={{ alt_home }}/bin/zkServer.sh start-foreground
+RuntimeDirectory=/var/run/zookeeper
 
 [Install]
 WantedBy=multi-user.target
